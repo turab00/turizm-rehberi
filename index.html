@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turizm Rehberi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Yükleniyor Ekranı -->
+    <div id="loader">Bilgiler yükleniyor...</div>
+
+    <!-- Hata Ekranı (Geçersiz QR Kod) -->
+    <div id="error-screen" class="hidden">
+        <h2>Kayıt Bulunamadı</h2>
+        <p>Lütfen geçerli bir karekod okuttuğunuzdan emin olun.</p>
+    </div>
+
+    <!-- İçerik Ekranı -->
+    <div id="content-screen" class="hidden">
+        <div class="image-container">
+            <img id="mekan-resim" src="" alt="Mekan Görseli">
+        </div>
+        <div class="info-container">
+            <h1 id="mekan-baslik">Başlık</h1>
+            <p class="ozet" id="mekan-ozet">Özet bilgi</p>
+            <div class="detay">
+                <p id="mekan-detay">Detaylı açıklama buraya gelecek...</p>
+            </div>
+            <a href="#" id="mekan-harita" target="_blank" class="btn">Haritada Gör</a>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

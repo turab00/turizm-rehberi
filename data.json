@@ -1,0 +1,18 @@
+[
+  {
+    "id": "tashan",
+    "baslik": "Tarihi Taşhan",
+    "ozet": "İlçemizin önemli tarihi ticaret ve konaklama merkezlerinden biri.",
+    "detay": "19. yüzyıl Osmanlı mimarisinin güzel örneklerinden olan Taşhan, bölgenin ticari hayatında önemli bir rol oynamıştır. Kesme taştan inşa edilen yapı, günümüzde restore edilerek turizme kazandırılmıştır.",
+    "resim": "img/tashan.jpg",
+    "harita_linki": "https://maps.google.com/?q=enlem,boylam"
+  },
+  {
+    "id": "tarihi-hamam",
+    "baslik": "Tarihi Kaplıca Hamamları",
+    "ozet": "Yüzyıllardır şifa dağıtan termal su kaynaklarımız.",
+    "detay": "Romalılardan günümüze kadar ulaştığı bilinen termal kaynaklar, Selçuklu ve Osmanlı dönemlerinde de şifahane olarak kullanılmıştır. Suyunun sıcaklığı ve mineral yapısı ile bilinir.",
+    "resim": "img/hamam.jpg",
+    "harita_linki": "https://maps.google.com/?q=enlem,boylam"
+  }
+]
