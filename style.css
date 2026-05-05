@@ -101,10 +101,10 @@ body {
 }
 
 .slider-wrapper img {
-    width: 100%;
+    min-width: 100%; 
     height: 100%;
-    object-fit: cover;
-    flex-shrink: 0; /* Resimlerin ezilmesini engeller */
+    object-fit: contain; /* Resmi kırpmadan sığdırır */
+    background-color: #f4f7f6; /* Yanlarda kalacak boşlukların rengi */
 }
 
 /* Slider İleri/Geri Butonları */
