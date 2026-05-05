@@ -36,7 +36,7 @@
       "img/mekan-3-3.jpg"
     ],
     "harita_linki": "https://maps.google.com/?q=41.10344, 35.61006"
-  }
+  },
   {
     "id": "mekan-4",
     "baslik": "İMARETHANE",
@@ -48,7 +48,7 @@
       "img/mekan-4-3.jpg"
     ],
     "harita_linki": "https://maps.google.com/?q=40.97062, 35.64482"
-  }
+  },
   {
     "id": "mekan-5",
     "baslik": "ASLANAĞZI KIZGÖZÜ HAMAMI",
@@ -60,7 +60,7 @@
       "img/mekan-5-3.jpg"
     ],
     "harita_linki": "https://maps.google.com/?q=40.97098, 35.65701"
-  }
+  },
   {
     "id": "mekan-6",
     "baslik": "TAŞ MEKTEP",
@@ -72,7 +72,7 @@
       "img/mekan-6-3.jpg"
     ],
     "harita_linki": "https://maps.google.com/?q=40.97166, 35.65914"
-  }
+  },
   {
     "id": "mekan-7",
     "baslik": "ERSANDIK KÖYÜ-CAMİ VE KİLİSE",
@@ -86,7 +86,7 @@
       "img/mekan-7-5.jpg"
     ],
     "harita_linki": "https://maps.google.com/?q=41.03541, 35.50461"
-  }
+  },
   {
     "id": "mekan-8",
     "baslik": "GÜVERCİNLİK KÖYÜ KAYA MEZARLARI",
@@ -98,7 +98,7 @@
       "img/mekan-8-3.jpg"
     ],
     "harita_linki": "https://maps.google.com/?q=41.04157, 35.81627"
-  }
+  },
   {
     "id": "mekan-9",
     "baslik": "HAVZA TARİHİ EVLERİ",
@@ -110,7 +110,7 @@
       "img/mekan-9-3.jpg"
     ],
     "harita_linki": "https://maps.google.com/?q=40.97145, 35.66104"
-  }
+  },
   {
     "id": "mekan-10",
     "baslik": "YENİCE KÖYÜ TARİHİ SU DEĞİRMENİ",
@@ -122,7 +122,7 @@
       "img/mekan-10-3.jpg"
     ],
     "harita_linki": "https://maps.google.com/?q=40.98829, 35.7561"
-  }
+  },
    {
     "id": "mekan-11",
     "baslik": "BALLIKAYA ŞELALESİ",
@@ -134,7 +134,7 @@
       "img/mekan-11-3.jpg"
     ],
     "harita_linki": "https://maps.google.com/?q=40.96979, 35.59998"
-  }
+  },
   {
     "id": "mekan-12",
     "baslik": "HAVZA ÜÇÜZLER ŞELALESİ",
