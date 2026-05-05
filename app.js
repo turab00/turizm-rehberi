@@ -1,20 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. URL'den 'id' parametresini al (Örn: ?id=tashan)
-    const urlParams = new URLSearchParams(window.location.search);
-    const mekanId = urlParams.get('id');
-
-    const loader = document.getElementById('loader');
-    const contentScreen = document.getElementById('content-screen');
-    const errorScreen = document.getElementById('error-screen');
-
-    // Eğer URL'de ID yoksa direkt hata ver
-    if (!mekanId) {
-        loader.classList.add('hidden');
-        errorScreen.classList.remove('hidden');
-        return;
-    }
-
-    document.addEventListener("DOMContentLoaded", () => {
     const urlParams = new URLSearchParams(window.location.search);
     const mekanId = urlParams.get('id');
 
@@ -76,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     if (currentIndex > 0) {
                         currentIndex--;
                     } else {
-                        currentIndex = totalImages - 1; // Başa dönerse en sona git (Döngüsel)
+                        currentIndex = totalImages - 1; 
                     }
                     updateSlider();
                 };
@@ -85,12 +69,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     if (currentIndex < totalImages - 1) {
                         currentIndex++;
                     } else {
-                        currentIndex = 0; // Sona gelirse en başa dön (Döngüsel)
+                        currentIndex = 0; 
                     }
                     updateSlider();
                 };
 
-                // Pencere boyutu değişirse slider'ı hizala (Telefon yan çevrilirse vb.)
                 window.addEventListener('resize', updateSlider);
                 // --- SLIDER İŞLEMLERİ BİTİŞİ ---
 
@@ -103,5 +86,4 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error("Hata:", error);
             loader.textContent = "Bağlantı hatası.";
         });
-});
 });
