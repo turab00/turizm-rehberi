@@ -1,0 +1,130 @@
+/* Genel Ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    /* Mobilde uygulama hissi vermek için yatay kaydırmayı kapatıyoruz */
+    overflow-x: hidden; 
+}
+
+/* Yükleme ve Hata Ekranları */
+#loader, #error-screen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* İçerik Ekranı Tasarımı (Mobil Öncelikli) */
+#content-screen {
+    max-width: 600px; /* Tablet ve bilgisayarlarda çok yayılmaması için */
+    margin: 0 auto;
+    background-color: #fff;
+    min-height: 100vh;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+/* Bilgi Alanı */
+.info-container {
+    padding: 25px 20px;
+}
+
+#mekan-baslik {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.ozet {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #e67e22;
+    margin-bottom: 20px;
+}
+
+.detay {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+/* Harita Butonu */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(52, 152, 219, 0.3);
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* Slider Ayarları */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden; /* Dışan taşan resimleri gizle */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.slider-wrapper {
+    display: flex;
+    height: 100%;
+    transition: transform 0.4s ease-in-out; /* Kayma animasyonu */
+}
+
+.slider-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0; /* Resimlerin ezilmesini engeller */
+}
+
+/* Slider İleri/Geri Butonları */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.slider-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }

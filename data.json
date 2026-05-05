@@ -1,0 +1,158 @@
+[
+  {
+    "id": "mekan-1",
+    "baslik": "HAVZA ATATÜRK EVİ MÜZESİ",
+    "ozet": "Havza Atatürk Evi, Milli Mücadele’nin ilk adımlarının atıldığı ve Atatürk’ün hatıralarının sergilendiği tarihi bir müzedir.",
+    "detay": "Havza Atatürk Evi (Mesudiye Oteli), Atatürk’ün 25 Mayıs 13 Haziran 1919 tarihleri arasında konakladığı, Milli Mücadele’nin ilk karargahlarından biridir. Havza Genelgesi’nin hazırlandığı bu tarihi bina, 1994 yılından beri müze olarak hizmet vermektedir. Müzede Atatürk’ün çalışma odası,yatak odası ve çeşitli etnografik eserler sergilenmektedir. 2001 yılında aslına uygun bir şekilde restore edilerek Havza Atatürk Evi Müzesi olarak özel müze statüsünde tescillenmiştir.",
+    "resim": [
+      "img/mekan-1-1.jpg",
+      "img/mekan-1-2.jpg",
+      "img/mekan-1-3.jpg",
+      "img/mekan-1-4.jpg"
+    ],
+    "harita_linki": "https://maps.google.com/?q=40.97065, 35.65884"
+  },
+  {
+    "id": "mekan-2",
+    "baslik": "YÖRGÜÇ PAŞAZADE CAMİİ",
+    "ozet": "Selçuklu döneminde inşa edilip çeşitli onarımlarla günümüze ulaşan Yörgüç Paşazade Mustafa Bey Camii, tarihi ve sade mimarisiyle öne çıkan bir yapıdır.",
+    "detay": "Hicri tarih 665,miladi 1297 yılında Selçuklu Sultanı II.Mes’ud tarafından camii olarak yapılmış Osmanlı İmparatorluğu döneminin II. Beyazıt zamanında (1519) Karaman Beylerbeyi olan Şadi Paşanın bu camiye olağanüstü bakımı,(restorasyonunu yaptırıp,çevresini duvarlarla çevirerek tecrit ettirmesi) nedeniyle uzun yıllar Şadi Paşa Camii olarak anılmıştır. Müteakiben Osmanlı Padişahlarından II. Mahmut’un eniştesi ve veziri Yörgüç Paşanın oğlu Amasya Emir-i Mustafa Bey tarafından camii-şerif tamir yapılmış bunun üzerine de Yörgüç Paşazade Mustafa Bey Camii olarak isimleştirilmiştir. Kesme taştan inşa edilmiş dikdörtgen planlı, kiremit çatılı, yalın bir Selçuklu mimari örneğidir.",
+    "resim": [
+      "img/mekan-2-1.jpg",
+      "img/mekan-2-2.jpg",
+      "img/mekan-2-3.jpg",
+      "img/mekan-2-4.jpg"
+    ],
+    "harita_linki": "https://maps.google.com/?q=40.97117, 35.65687"
+  }
+  {
+    "id": "mekan-3",
+    "baslik": "KURT KÖPRÜ",
+    "ozet": "İstavroz Çayı üzerinde yer alan, Bizans ve Selçuklu izlerini taşıyan bu tarihi köprü, özgün mimarisi ve devasa boyutlarıyla 2010 yılında aslına uygun olarak restore edilmiş kadim bir mirastır.",
+    "detay": "Kayabaşı Mahallesindedir. İlçe ile Vezirköprü arasındaki sınırda İstavroz Çayı üzerindedir. Kesin yapılış tarihi bilinmemektedir. Yapılış mimarisi ve kullanılan malzeme değerlendirildiğinde  XII-XIII yüzyılda Bizans döneminde yapıldığı, Selçuklular döneminde onarım gördüğü düşünülmektedir. Köprü takriben 400 m. Uzunluğunda, 2 m. Genişliği ve 12 m. Yüksekliğindedir. 2 büyük göz ve ortasında bekçi evi mevcuttur. 2010 yılında aslına uygun restore edilmiştir.",
+    "resim": [
+      "img/mekan-3-1.jpg",
+      "img/mekan-3-2.jpg",
+      "img/mekan-3-3.jpg"
+    ],
+    "harita_linki": "https://maps.google.com/?q=41.10344, 35.61006"
+  }
+  {
+    "id": "mekan-4",
+    "baslik": "İMARETHANE",
+    "ozet": "II. Murat döneminde hayır kurumu olarak inşa edilen bu 15. yüzyıl Osmanlı yapısı, restore edilmiş haliyle kültürel mirası geleceğe taşıyan turistik bir mekandır.",
+    "detay": " 15. yüzyıla (1429) dayanan yapı, klasik Osmanlı dönemi vakıf yapılarından biridir.1429 yılında II. Murat döneminde Amasya Valisi Yörgüç Paşazade Mustafa Bey tarafından yaptırılan önemli bir Osmanlı yapısıdır. Yoksullar, yolcular ve dervişler için inşa edilen bu tarihi yapı, 2007 yılında restore edilerek kültürel mirası yaşatmaya devam eden turistik bir mekandır.   ",
+    "resim": [
+      "img/mekan-4-1.jpg",
+      "img/mekan-4-2.jpg",
+      "img/mekan-4-3.jpg"
+    ],
+    "harita_linki": "https://maps.google.com/?q=40.97062, 35.64482"
+  }
+  {
+    "id": "mekan-5",
+    "baslik": "ASLANAĞZI KIZGÖZÜ HAMAMI",
+    "ozet": "Selçuklu döneminde Bizans temelleri üzerine inşa edilen Aslanağzı-Kızgözü Kaplıcası, asırlardır şifalı sularıyla hizmet veren köklü bir vakıf hamamıdır.",
+    "detay": "Tarihi Aslanağzı-Kızgözü Kaplıcası, Selçuklu Sultanı II. Mesud tarafından 1256 (veya 1297) yılında yaptırılan, Bizans temelleri üzerine kurulan köklü bir vakıf hamamıdır. 55°C sıcaklıktaki şifalı suyuyla kas, iskelet ve cilt hastalıklarına iyi gelen, 1870’lerde tadilat görmüş tarihi bir kaplıcadır. “Vakıf Hamamı”  adının kullanılmasına karşın halk arasında  “Sultan Mesud Hamamı”, “Büyük Hamam”,”Aslanağzı-Kız Gözü” ya da “Sa’di Paşa Hamamı” olarak bilinir.",
+    "resim": [
+      "img/mekan-5-1.jpg",
+      "img/mekan-5-2.jpg",
+      "img/mekan-5-3.jpg"
+    ],
+    "harita_linki": "https://maps.google.com/?q=40.97098, 35.65701"
+  }
+  {
+    "id": "mekan-6",
+    "baslik": "TAŞ MEKTEP",
+    "ozet": "Müdafaa-i Hukuk Cemiyeti’nin temellerinin atıldığı tarihi Taş Mektep, günümüzde sanat merkezi olarak hizmet veren tescilli bir mirastır.",
+    "detay": "1911 yılında inşa edilen bu tarihi bina, Milli Mücadele döneminde “Müdafaa-i Hukuk Cemiyeti”nin temellerinin atıldığı yer olması bakımından büyük bir tarihi öneme sahiptir. Halk arasında Taş Mektep olarak bilinir. Tarihi değer olarak koruma altına alınan bina, günümüzde sanat merkezi olarak hizmet vermektedir.",
+    "resim": [
+      "img/mekan-6-1.jpg",
+      "img/mekan-6-2.jpg",
+      "img/mekan-6-3.jpg"
+    ],
+    "harita_linki": "https://maps.google.com/?q=40.97166, 35.65914"
+  }
+  {
+    "id": "mekan-7",
+    "baslik": "ERSANDIK KÖYÜ-CAMİ VE KİLİSE",
+    "ozet": "Bölgenin en büyük Rum kilisesi ile duvarları bitişik inşa edilen bu cami, dünyada nadir rastlanan eşsiz bir kültürel miras örneğidir.",
+    "detay": "Bölgenin en büyük Rum kiliselerinden biri bu köyde bulunmaktadır. Kilise aktifliğini yitirdikten sonra hemen yanına cami yapılmıştır. Köydeki cami ve kilisenin duvarlarının bitişik olması kültürel miras açısından dünyada nadir rastlanan örneklerden biri olarak kabul edilir. ",
+    "resim": [
+      "img/mekan-7-1.jpg",
+      "img/mekan-7-2.jpg",
+      "img/mekan-7-3.jpg",
+      "img/mekan-7-4.jpg",
+      "img/mekan-7-5.jpg"
+    ],
+    "harita_linki": "https://maps.google.com/?q=41.03541, 35.50461"
+  }
+  {
+    "id": "mekan-8",
+    "baslik": "GÜVERCİNLİK KÖYÜ KAYA MEZARLARI",
+    "ozet": "Helenistik veya Roma dönemine ait Güvercinlik Köyü Kaya Mezarları, ana kayaya oyulmuş üç anıt mezardan oluşan bölgeye özgü önemli bir arkeolojik mirastır.",
+    "detay": "Güvercinlik Köyü Kaya Mezarları, Güvercinlik Mahallesi’nin Mağara Önü Mevkii’nde, Yılanlıkaya Deresi’ne bakan bir tepenin yamacında bulunmaktadır. Genellikle Amasya’daki dünyaca ünlü Pontus Kral Kaya Mezarları ile karıştırılsa da, Havza’dakiler bölgenin yerel tarihine ışık tutan önemli arkeolojik kalıntılardır. Helenistik veya Roma dönemlerine tarihlendirilen, ana kaya oyularak yapılmış anıt mezarlardır. Yan yana üç adet mezardan oluşan ve ön cephesinde sütun kalıntıları bulunan bu tarihi yapılar, bölgedeki kültürel mirasın önemli parçalarıdır. ",
+    "resim": [
+      "img/mekan-8-1.jpg",
+      "img/mekan-8-2.jpg",
+      "img/mekan-8-3.jpg"
+    ],
+    "harita_linki": "https://maps.google.com/?q=41.04157, 35.81627"
+  }
+  {
+    "id": "mekan-9",
+    "baslik": "HAVZA TARİHİ EVLERİ",
+    "ozet": "Milli Mücadele’ye tanıklık eden 19. yüzyıl Osmanlı sivil mimarisi örneği bu tescilli konaklar, Havza’nın korunmuş tarihi dokusunu yansıtmaktadır.",
+    "detay": "Havza’daki tarihi evler, özellikle Milli Mücadele yıllarına tanıklık etmeleri ve 19. Yüzyıl Osmanlı sivil mimarisini yansıtmalarıyla bilinir. Bahçelievler Mahallesinde 19. yy. da yapıldığı tahmin edilen (5) adet tarihi konak bulunmakta olup, Kültür Varlıkları Koruma Kurulunun   12/07/1980 A-2371 sayılı tescili ile koruma altında bulunmaktadır. Genellikle zemin üzeri 2 katlı olan tarihi Havza evlerinin dış cephesi yığma tuğladan iç bölmeleri bağdadi olarak yapılmıştır.",
+    "resim": [
+      "img/mekan-9-1.jpg",
+      "img/mekan-9-2.jpg",
+      "img/mekan-9-3.jpg"
+    ],
+    "harita_linki": "https://maps.google.com/?q=40.97145, 35.66104"
+  }
+  {
+    "id": "mekan-10",
+    "baslik": "YENİCE KÖYÜ TARİHİ SU DEĞİRMENİ",
+    "ozet": "Yenice Mahallesi'nde bulunan iki asırlık tarihi su değirmeni, Pehlivaner ailesi tarafından dört kuşaktır yaşatılan ve geleneksel taş değirmen yöntemini sürdüren canlı bir kültür mirasıdır.",
+    "detay": "Yenice Mahallesi’nde bulunan yaklaşık 200  yıllık tarihi su değirmeni,dört kuşaktır Pehlivaner  ailesi tarafından işletilen yaşayan bir kültür mirasıdır. Cengiz Pehlivaner’in işlettiği bu tarihi mekânda, su gücüyle buğday, mısır, çavdar ve hayvan yemi öğütülerek taş değirmen geleneği sürdürülmektedir. Adeta yıllara ve teknolojiye meydan okuyan iki asırlık su değirmeninin çarkı, dördüncü kuşak torun tarafından döndürülüyor.",
+    "resim": [
+      "img/mekan-10-1.jpg",
+      "img/mekan-10-2.jpg",
+      "img/mekan-10-3.jpg"
+    ],
+    "harita_linki": "https://maps.google.com/?q=40.98829, 35.7561"
+  }
+   {
+    "id": "mekan-11",
+    "baslik": "BALLIKAYA ŞELALESİ",
+    "ozet": "Hacıdede Mahallesi'nde bulunan ve adını arıların kaya arasındaki peteklerinden alan Ballıkaya Şelalesi, yaklaşık 25 metre yükseklikten dökülen sularıyla doğaseverlere görsel bir şölen sunmaktadır.",
+    "detay": "Havza ilçe merkezine yaklaşık 15-17 kilometre uzaklıkta bulunan Hacıdede Mahallesi (Köyü) kırsalındadır. Şelale yaklaşık 25 metre yükseklikten dökülmektedir. Bahar aylarında canlanan gür bitki örtüsüyle “görsel bir şölen” sunan şelalenin çevresi, çınar ve meşe ağaçlarıyla çevrilidir. Arıların kayada bal yapmasından dolayı, köy halkı tarafından “Ballıkaya” olarak adlandırılmıştır. Bu kayanın arasından şelale akmaktadır.",
+    "resim": [
+      "img/mekan-11-1.jpg",
+      "img/mekan-11-2.jpg",
+      "img/mekan-11-3.jpg"
+    ],
+    "harita_linki": "https://maps.google.com/?q=40.96979, 35.59998"
+  }
+  {
+    "id": "mekan-12",
+    "baslik": "HAVZA ÜÇÜZLER ŞELALESİ",
+    "ozet": "Hacıdede Mahallesi'nde bulunan ve adını arıların kaya arasındaki peteklerinden alan Ballıkaya Şelalesi, yaklaşık 25 metre yükseklikten dökülen sularıyla doğaseverlere görsel bir şölen sunmaktadır.",
+    "detay": "Boyalı Mahallesi, Aşağı Esentepe mevkiinde  bulunan Üçüzler Şelalesi ( Yaygın adıyla Boyalı Şelalesi) adını art arda sıralanan üç adet şelaleden almaktadır. Boyalı Mahallesi sınırları içerisinde yer alan, henüz çok az kişi tarafından keşfedilmiş saklı bir doğa harikasıdır. Doğa yürüyüşü, fotoğrafçılık ve piknik için uygun olan bölge, el değmemiş Karadeniz doğasıyla dikkat çekmektedir. ",
+    "resim": [
+      "img/mekan-12-1.jpg",
+      "img/mekan-12-2.jpg",
+      "img/mekan-12-3.jpg",
+      "img/mekan-12-4.jpg",
+      "img/mekan-12-5.jpg",
+      "img/mekan-12-6.jpg",
+      "img/mekan-12-7.jpg",
+      "img/mekan-12-8.jpg",
+      "img/mekan-12-9.jpg",
+      "img/mekan-12-10.jpg"
+
+    ],
+    "harita_linki": "https://maps.google.com/?q=41.21671, 35.85322"
+  }
+]

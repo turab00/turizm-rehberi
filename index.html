@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turizm Rehberi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Yükleniyor Ekranı -->
+    <div id="loader">Bilgiler yükleniyor...</div>
+
+    <!-- Hata Ekranı (Geçersiz QR Kod) -->
+    <div id="error-screen" class="hidden">
+        <h2>Kayıt Bulunamadı</h2>
+        <p>Lütfen geçerli bir karekod okuttuğunuzdan emin olun.</p>
+    </div>
+
+    <!-- İçerik Ekranı -->
+    <div id="content-screen" class="hidden">
+        <div class="image-container">
+            <div id="slider-wrapper" class="slider-wrapper">
+                <!-- Resimler buraya JS ile eklenecek -->
+            </div>
+            <!-- Slider Butonları -->
+            <button id="prev-btn" class="slider-btn prev hidden">&#10094;</button>
+            <button id="next-btn" class="slider-btn next hidden">&#10095;</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
