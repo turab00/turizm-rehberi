@@ -14,32 +14,94 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-    // 2. data.json dosyasını çek ve eşleşen veriyi bul
+    document.addEventListener("DOMContentLoaded", () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const mekanId = urlParams.get('id');
+
+    const loader = document.getElementById('loader');
+    const contentScreen = document.getElementById('content-screen');
+    const errorScreen = document.getElementById('error-screen');
+
+    if (!mekanId) {
+        loader.classList.add('hidden');
+        errorScreen.classList.remove('hidden');
+        return;
+    }
+
     fetch('data.json')
         .then(response => response.json())
         .then(data => {
-            // Veritabanındaki mekanlar arasında bizim id'mizle eşleşeni bul
             const mekan = data.find(item => item.id === mekanId);
-
             loader.classList.add('hidden');
 
             if (mekan) {
-                // Eşleşme başarılı! Ekrana bas.
                 document.getElementById('mekan-baslik').textContent = mekan.baslik;
                 document.getElementById('mekan-ozet').textContent = mekan.ozet;
                 document.getElementById('mekan-detay').textContent = mekan.detay;
-                document.getElementById('mekan-resim').src = mekan.resim;
-                document.getElementById('mekan-resim').alt = mekan.baslik;
                 document.getElementById('mekan-harita').href = mekan.harita_linki;
                 
+                // --- SLIDER İŞLEMLERİ BAŞLANGICI ---
+                const sliderWrapper = document.getElementById('slider-wrapper');
+                const prevBtn = document.getElementById('prev-btn');
+                const nextBtn = document.getElementById('next-btn');
+                
+                sliderWrapper.innerHTML = ''; // Önceki resimleri temizle
+
+                // Resimleri oluştur ve ekle
+                if (mekan.resimler && mekan.resimler.length > 0) {
+                    mekan.resimler.forEach(resimSrc => {
+                        const img = document.createElement('img');
+                        img.src = resimSrc;
+                        img.alt = mekan.baslik;
+                        sliderWrapper.appendChild(img);
+                    });
+
+                    // Eğer 1'den fazla resim varsa butonları göster
+                    if (mekan.resimler.length > 1) {
+                        prevBtn.classList.remove('hidden');
+                        nextBtn.classList.remove('hidden');
+                    }
+                }
+
+                // Kaydırma Mantığı
+                let currentIndex = 0;
+                const totalImages = mekan.resimler ? mekan.resimler.length : 0;
+
+                function updateSlider() {
+                    const width = sliderWrapper.clientWidth;
+                    sliderWrapper.style.transform = `translateX(-${currentIndex * width}px)`;
+                }
+
+                prevBtn.onclick = () => {
+                    if (currentIndex > 0) {
+                        currentIndex--;
+                    } else {
+                        currentIndex = totalImages - 1; // Başa dönerse en sona git (Döngüsel)
+                    }
+                    updateSlider();
+                };
+
+                nextBtn.onclick = () => {
+                    if (currentIndex < totalImages - 1) {
+                        currentIndex++;
+                    } else {
+                        currentIndex = 0; // Sona gelirse en başa dön (Döngüsel)
+                    }
+                    updateSlider();
+                };
+
+                // Pencere boyutu değişirse slider'ı hizala (Telefon yan çevrilirse vb.)
+                window.addEventListener('resize', updateSlider);
+                // --- SLIDER İŞLEMLERİ BİTİŞİ ---
+
                 contentScreen.classList.remove('hidden');
             } else {
-                // ID json dosyasında yoksa
                 errorScreen.classList.remove('hidden');
             }
         })
         .catch(error => {
-            console.error("Veri çekilirken hata oluştu:", error);
-            loader.textContent = "Bağlantı hatası oluştu. Lütfen tekrar deneyin.";
+            console.error("Hata:", error);
+            loader.textContent = "Bağlantı hatası.";
         });
+});
 });
