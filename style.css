@@ -186,3 +186,52 @@ body {
     margin-top: 5px;
     font-style: italic;
 }
+
+/* Ana Sayfa Başlık */
+.home-header {
+    padding: 40px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Mekan Kartları Izgarası */
+.mekan-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Mobilde yan yana 2 kart */
+    gap: 15px;
+    padding: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.mekan-kart {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s;
+}
+
+.mekan-kart:active { transform: scale(0.95); }
+
+.kart-resim {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.kart-baslik {
+    padding: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Detay Sayfası Geri Butonu */
+.ust-nav { padding: 10px; background: #fff; }
+.geri-btn { text-decoration: none; color: #3498db; font-weight: bold; }
