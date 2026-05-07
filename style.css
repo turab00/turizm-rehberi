@@ -128,3 +128,61 @@ body {
 
 .prev { left: 10px; }
 .next { right: 10px; }
+
+/* Footer Tasarımı (Yatay Düzen) */
+.proje-footer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.footer-line {
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+    margin-bottom: 15px;
+}
+
+/* Yan Yana Dizilim (Flexbox) */
+.footer-icerik {
+    display: flex;
+    align-items: center; /* Logo ve metni dikeyde ortalar */
+    gap: 15px; /* Logo ve yazılar arasındaki boşluk */
+}
+
+/* Logo Ayarları */
+.footer-logo-alani {
+    flex-shrink: 0; /* Ekran küçülünce logonun ezilmesini önler */
+}
+
+.okul-logo {
+    width: 70px; /* Logoyu kesin bir boyuta küçülttük */
+    height: auto;
+}
+
+/* Metin Ayarları */
+.footer-metin {
+    text-align: left; /* Metni sola yasla */
+}
+
+.okul-ismi {
+    font-size: 1rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+
+.proje-ekibi {
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+.proje-notu {
+    font-size: 0.75rem;
+    color: #999;
+    margin-top: 5px;
+    font-style: italic;
+}
