@@ -149,6 +149,7 @@ body {
 .footer-icerik {
     display: flex;
     align-items: center; /* Logo ve metni dikeyde ortalar */
+    justify-content: center;
     gap: 15px; /* Logo ve yazılar arasındaki boşluk */
 }
 
