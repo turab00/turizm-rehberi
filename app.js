@@ -3,87 +3,70 @@ document.addEventListener("DOMContentLoaded", () => {
     const mekanId = urlParams.get('id');
 
     const loader = document.getElementById('loader');
+    const homeScreen = document.getElementById('home-screen');
     const contentScreen = document.getElementById('content-screen');
     const errorScreen = document.getElementById('error-screen');
-
-    if (!mekanId) {
-        loader.classList.add('hidden');
-        errorScreen.classList.remove('hidden');
-        return;
-    }
 
     fetch('data.json')
         .then(response => response.json())
         .then(data => {
-            const mekan = data.find(item => item.id === mekanId);
             loader.classList.add('hidden');
 
-            if (mekan) {
-                document.getElementById('mekan-baslik').textContent = mekan.baslik;
-                document.getElementById('mekan-ozet').textContent = mekan.ozet;
-                document.getElementById('mekan-detay').textContent = mekan.detay;
-                document.getElementById('mekan-harita').href = mekan.harita_linki;
-                
-                // --- SLIDER İŞLEMLERİ BAŞLANGICI ---
-                const sliderWrapper = document.getElementById('slider-wrapper');
-                const prevBtn = document.getElementById('prev-btn');
-                const nextBtn = document.getElementById('next-btn');
-                
-                sliderWrapper.innerHTML = ''; // Önceki resimleri temizle
-
-                // Resimleri oluştur ve ekle
-                if (mekan.resimler && mekan.resimler.length > 0) {
-                    mekan.resimler.forEach(resimSrc => {
-                        const img = document.createElement('img');
-                        img.src = resimSrc;
-                        img.alt = mekan.baslik;
-                        sliderWrapper.appendChild(img);
-                    });
-
-                    // Eğer 1'den fazla resim varsa butonları göster
-                    if (mekan.resimler.length > 1) {
-                        prevBtn.classList.remove('hidden');
-                        nextBtn.classList.remove('hidden');
-                    }
-                }
-
-                // Kaydırma Mantığı
-                let currentIndex = 0;
-                const totalImages = mekan.resimler ? mekan.resimler.length : 0;
-
-                function updateSlider() {
-                    const width = sliderWrapper.clientWidth;
-                    sliderWrapper.style.transform = `translateX(-${currentIndex * width}px)`;
-                }
-
-                prevBtn.onclick = () => {
-                    if (currentIndex > 0) {
-                        currentIndex--;
-                    } else {
-                        currentIndex = totalImages - 1; 
-                    }
-                    updateSlider();
-                };
-
-                nextBtn.onclick = () => {
-                    if (currentIndex < totalImages - 1) {
-                        currentIndex++;
-                    } else {
-                        currentIndex = 0; 
-                    }
-                    updateSlider();
-                };
-
-                window.addEventListener('resize', updateSlider);
-                // --- SLIDER İŞLEMLERİ BİTİŞİ ---
-
-                contentScreen.classList.remove('hidden');
+            if (!mekanId) {
+                // --- ANA SAYFAYI RENDER ET ---
+                homeScreen.classList.remove('hidden');
+                const liste = document.getElementById('mekan-listesi');
+                data.forEach(mekan => {
+                    const kart = document.createElement('a');
+                    kart.href = `?id=${mekan.id}`;
+                    kart.className = 'mekan-kart';
+                    kart.innerHTML = `
+                        <img src="${mekan.resimler[0]}" class="kart-resim">
+                        <div class="kart-baslik">${mekan.baslik}</div>
+                    `;
+                    liste.appendChild(kart);
+                });
             } else {
-                errorScreen.classList.remove('hidden');
+                // --- DETAY SAYFASINI RENDER ET (Eski Kodların) ---
+                const mekan = data.find(item => item.id === mekanId);
+                if (mekan) {
+                    contentScreen.classList.remove('hidden');
+                    document.getElementById('mekan-baslik').textContent = mekan.baslik;
+                    document.getElementById('mekan-ozet').textContent = mekan.ozet;
+                    document.getElementById('mekan-detay').textContent = mekan.detay;
+                    document.getElementById('mekan-harita').href = mekan.harita_linki;
+                    setupSlider(mekan);
+                } else {
+                    errorScreen.classList.remove('hidden');
+                }
             }
-        })
-        .catch(error => {
-            console.error("Hata:", error);
-            loader.textContent = "Bağlantı hatası.";
         });
+
+    function setupSlider(mekan) {
+        const wrapper = document.getElementById('slider-wrapper');
+        const prev = document.getElementById('prev-btn');
+        const next = document.getElementById('next-btn');
+        let index = 0;
+
+        mekan.resimler.forEach(src => {
+            const img = document.createElement('img');
+            img.src = src;
+            wrapper.appendChild(img);
+        });
+
+        if(mekan.resimler.length > 1) {
+            prev.classList.remove('hidden');
+            next.classList.remove('hidden');
+        }
+
+        const update = () => {
+            wrapper.style.transform = `translateX(-${index * wrapper.clientWidth}px)`;
+        };
+
+        next.onclick = () => { index = (index + 1) % mekan.resimler.length; update(); };
+        prev.onclick = () => { index = (index - 1 + mekan.resimler.length) % mekan.resimler.length; update(); };
+        
+        // Otomatik kaydır
+        setInterval(() => { index = (index + 1) % mekan.resimler.length; update(); }, 4000);
+    }
 });
