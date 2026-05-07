@@ -3,57 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turizm Rehberi</title>
+    <title>Havza Turizm Rehberi</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Yükleniyor Ekranı -->
     <div id="loader">Bilgiler yükleniyor...</div>
 
-    <!-- Hata Ekranı (Geçersiz QR Kod) -->
-    <div id="error-screen" class="hidden">
-        <h2>Kayıt Bulunamadı</h2>
-        <p>Lütfen geçerli bir karekod okuttuğunuzdan emin olun.</p>
+    <div id="home-screen" class="hidden">
+        <header class="home-header">
+            <h1>Havza Gezi Rehberi</h1>
+            <p>İlçemizin tarihi ve turistik yerlerini keşfedin</p>
+        </header>
+        <div class="mekan-grid" id="mekan-listesi">
+            </div>
     </div>
 
-    <!-- İçerik Ekranı -->
     <div id="content-screen" class="hidden">
+        <div class="ust-nav">
+            <a href="/" class="geri-btn">❮ Ana Sayfa</a>
+        </div>
         <div class="image-container">
-            <div id="slider-wrapper" class="slider-wrapper">
-                <!-- Resimler buraya JS ile eklenecek -->
-            </div>
-            <!-- Slider Butonları -->
-            <button id="prev-btn" class="slider-btn prev hidden">&#10094;</button>
-            <button id="next-btn" class="slider-btn next hidden">&#10095;</button>
+            <div id="slider-wrapper" class="slider-wrapper"></div>
+            <button id="prev-btn" class="slider-btn prev hidden">❮</button>
+            <button id="next-btn" class="slider-btn next hidden">❯</button>
         </div>
         
-        <!-- EKSİK OLAN BÖLÜM EKLENDİ -->
         <div class="info-container">
             <h1 id="mekan-baslik">Başlık</h1>
             <p class="ozet" id="mekan-ozet">Özet bilgi</p>
             <div class="detay">
-                <p id="mekan-detay">Detaylı açıklama buraya gelecek...</p>
+                <p id="mekan-detay">Detaylı açıklama...</p>
             </div>
             <a href="#" id="mekan-harita" target="_blank" class="btn">Haritada Gör</a>
-            <footer class="proje-footer">
-            <hr class="footer-line">
-            <div class="footer-icerik">
-                <div class="footer-logo-alani">
-                    <img src="img/okul-logosu.png" alt="Okul Logosu" class="okul-logo">
-                </div>
-                <div class="footer-metin">
-                    <h3 class="okul-ismi">Samsun Havza Anadolu İmam Hatip Lisesi</h3>
-                    <p class="proje-ekibi">
-                        <strong>Danışman Öğretmen:</strong> Zübeyde AKÇAY<br>
-                        <strong>Proje Ekibi:</strong> Abdullah KÜL, Burak SERTKAYA
-                    </p>
-                    <p class="proje-notu">Bu çalışma Havza Turizmini Tanıtma Projesi kapsamında Havza Anadolu İmam Hatip Lisesi tarafından hazırlanmıştır.</p>
-                </div>
-            </div>
-        </footer>
         </div>
     </div>
+
+    <div id="error-screen" class="hidden">
+        <h2>Kayıt Bulunamadı</h2>
+        <a href="/">Ana Sayfaya Dön</a>
+    </div>
+
+    <footer class="proje-footer">
+        <hr class="footer-line">
+        <div class="footer-icerik">
+            <div class="footer-logo-alani">
+                <img src="img/okul-logosu.png" alt="Okul Logosu" class="okul-logo">
+            </div>
+            <div class="footer-metin">
+                <h3 class="okul-ismi">Samsun Havza Anadolu İmam Hatip Lisesi</h3>
+                <p class="proje-ekibi">
+                    <strong>Danışman Öğretmen:</strong> Zübeyde AKÇAY<br>
+                    <strong>Proje Ekibi:</strong> Abdullah KÜL, Burak SERTKAYA
+                </p>
+                 <p class="proje-notu">Bu çalışma Havza Turizmini Tanıtma Projesi kapsamında Havza Anadolu İmam Hatip Lisesi tarafından hazırlanmıştır.</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="app.js"></script>
 </body>
