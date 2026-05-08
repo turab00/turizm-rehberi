@@ -67,6 +67,6 @@ document.addEventListener("DOMContentLoaded", () => {
         prev.onclick = () => { index = (index - 1 + mekan.resimler.length) % mekan.resimler.length; update(); };
         
         // Otomatik kaydır
-        setInterval(() => { index = (index + 1) % mekan.resimler.length; update(); }, 4000);
+        setInterval(() => { index = (index + 1) % mekan.resimler.length; update(); }, 5000);
     }
 });
