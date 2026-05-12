@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     contentScreen.classList.remove('hidden');
                     document.getElementById('mekan-baslik').textContent = mekan.baslik;
                     document.getElementById('mekan-ozet').textContent = mekan.ozet;
-                    document.getElementById('mekan-detay').textContent = mekan.detay;
+                    document.getElementById('mekan-detay').innerHTML = mekan.detay;
                     document.getElementById('mekan-harita').href = mekan.harita_linki;
                     setupSlider(mekan);
                 } else {
